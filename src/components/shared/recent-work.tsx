@@ -95,6 +95,7 @@ const RecentWork = () => {
                                     <Image
                                         src={project.image}
                                         alt={project.title}
+                                        placeholder='blur'
                                         className="rounded-[1.5rem] w-full h-full object-cover min-h-60 lg:min-h-100"
                                     />
                                 </div>
