@@ -31,29 +31,27 @@ export function Companies() {
                     <div className="space-y-6 max-w-2xl">
                         <p className="text-sm font-bold text-primary uppercase tracking-[0.2em] flex items-center gap-2">
                             <span className="h-2 w-2 rounded-full bg-primary animate-pulse" />
-                            Companies Growing With Us
+                            Partners We Grow With
                         </p>
                         <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tighter text-slate-900 leading-[1.1]">
-                            A Growth Partner to <br className="hidden md:block" /> 50+ Companies
+                            Trusted by 50+ <br className="hidden md:block" /> Leading Companies
                         </h2>
                         <p className="text-muted-foreground text-lg leading-relaxed max-w-lg">
-                            Trusted by teams at Bukit Vista, OJT Indonesia, and government
-                            institutions — companies that chose speed over uncertainty.
+                            From startups to established enterprises, we help teams accelerate growth, streamline processes, and unlock new opportunities.
                         </p>
                     </div>
 
                     {/* Right Side: Stat Cards */}
-                    {/* Replaced invalid min-w-3xs with standard w-full sm:w-[200px] to keep them uniform */}
                     <div className="flex flex-col sm:flex-row gap-4 shrink-0">
                         <Card className="border-none bg-slate-50 rounded-[2rem] p-2 w-full sm:w-[200px] shadow-sm">
                             <CardHeader className="pb-2">
                                 <CardTitle className="text-5xl font-semibold tracking-tighter text-primary">
-                                    1000+
+                                    50+
                                 </CardTitle>
                             </CardHeader>
                             <CardContent>
                                 <p className="text-muted-foreground text-sm font-medium leading-relaxed">
-                                    Users enabled with <br /> solutions
+                                    Companies empowered <br /> with our solutions
                                 </p>
                             </CardContent>
                         </Card>
@@ -61,12 +59,12 @@ export function Companies() {
                         <Card className="border-none bg-slate-50 rounded-[2rem] p-2 w-full sm:w-[200px] shadow-sm">
                             <CardHeader className="pb-2">
                                 <CardTitle className="text-5xl font-semibold tracking-tighter text-primary">
-                                    50%
+                                    75%
                                 </CardTitle>
                             </CardHeader>
                             <CardContent>
                                 <p className="text-muted-foreground text-sm font-medium leading-relaxed">
-                                    Cost reduction average <br /> for our clients
+                                    Average efficiency <br /> improvement for clients
                                 </p>
                             </CardContent>
                         </Card>
@@ -79,10 +77,8 @@ export function Companies() {
                     {companies.map((company, index) => (
                         <div
                             key={index}
-                            // Lowered base opacity slightly so the hover effect pops more
                             className="flex items-center justify-center grayscale opacity-40 hover:opacity-100 hover:grayscale-0 transition-all duration-300 cursor-default"
                         >
-                            {/* Added text-xl to make the text-based logos feel more like actual logos */}
                             <div className={cn("flex items-center gap-2 text-xl md:text-2xl", company.className)}>
                                 {company.logo}
                                 <span>{company.name}</span>
