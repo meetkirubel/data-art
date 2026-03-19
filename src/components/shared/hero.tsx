@@ -60,7 +60,7 @@ export function Hero() {
                     >
                         <Link href="https://form.jotform.com/242335134954456" target="_blank">
                             <Button variant="secondary" className="rounded-full w-full px-8 py-6 text-base font-medium">
-                                Get Started
+                                Start a Project
                                 <ArrowRight className="ml-2 h-5 w-5 hidden md:block" />
                             </Button>
                         </Link>

@@ -13,8 +13,7 @@ export function Footer() {
                             <Image src={logo} alt="Data Art Consulting" className="h-12 w-50 object-cover" objectFit="cover" />
                         </Link>
                         <p className=" mb-6 max-w-sm">
-                            Ship your MVP in 30 days with battle-tested code and AI-accelerated development.
-                        </p>
+                            We provide support, development, and integrations to keep your systems running smoothly and your work moving forward.                        </p>
                         <Link href="https://form.jotform.com/242335134954456" target="_blank">
                             <Button >
                                 Schedule a Call
