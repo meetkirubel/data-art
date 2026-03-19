@@ -1,36 +1,25 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-
+import Image from "next/image";
+import logo from "@/asset/logo.png"
 export function Footer() {
     return (
         <footer className=" bg-secondary py-16">
-            <div className="container mx-auto px-4 lg:px-8">
+            <div className="wrapper mx-auto  ">
                 <div className="grid md:grid-cols-4 gap-12 mb-12">
                     {/* Logo and description */}
                     <div className="md:col-span-2">
                         <Link href="/" className="flex items-center gap-2 mb-4">
-                            <svg
-                                width="32"
-                                height="32"
-                                viewBox="0 0 32 32"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <path
-                                    d="M8 8L24 8L16 24L8 8Z"
-                                    fill="white"
-                                    stroke="white"
-                                    strokeWidth="2"
-                                />
-                            </svg>
-                            <span className="font-bold text-3xl tracking-tighter">Data Art Consulting</span>
+                            <Image src={logo} alt="Data Art Consulting" className="h-12 w-50 object-cover" objectFit="cover" />
                         </Link>
                         <p className=" mb-6 max-w-sm">
                             Ship your MVP in 30 days with battle-tested code and AI-accelerated development.
                         </p>
-                        <Button className="bg-[#2563eb] hover:bg-[#1d4ed8] text-white rounded-full">
-                            Schedule a Call
-                        </Button>
+                        <Link href="https://form.jotform.com/242335134954456" target="_blank">
+                            <Button >
+                                Schedule a Call
+                            </Button>
+                        </Link>
                     </div>
 
                     {/* Links */}

@@ -22,7 +22,7 @@ const companies = [
 export function Companies() {
     return (
         <section className="py-24 bg-background">
-            <div className="container mx-auto px-4 lg:px-8">
+            <div className="wrapper mx-auto px-4 lg:px-8">
 
                 {/* Top Row: Header & Stats */}
                 <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-12 mb-20">

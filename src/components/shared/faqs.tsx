@@ -8,30 +8,36 @@ import {
 
 const faqs = [
     {
-        question: "How does the 50% cost reduction work?",
-        answer: "We audit your current cloud infrastructure and automate repetitive manual tasks. Most clients see a significant drop in operational overhead within the first 3 months of implementation."
+        question: "What services does Data Art Consulting offer?",
+        answer:
+            "We provide technical support, development, system integrations, and training to help your business operate efficiently and grow."
     },
     {
-        question: "Is this suitable for early-stage startups?",
-        answer: "Absolutely. We specialize in helping companies choose 'speed over uncertainty,' providing the technical foundation you need to scale without the typical growing pains."
+        question: "How quickly can I get support?",
+        answer:
+            "Our team is available 24/7 to resolve issues and minimize downtime, ensuring your operations stay uninterrupted."
     },
     {
-        question: "What kind of support can we expect?",
-        answer: "Every partner gets a dedicated Slack channel and weekly syncs. We operate as an extension of your team, not just a third-party vendor."
+        question: "Do you offer custom development solutions?",
+        answer:
+            "Yes! We build web apps, mobile apps, and database systems tailored to your business needs and goals."
     },
     {
-        question: "Do you offer custom integrations?",
-        answer: "Yes. Whether it's AWS, Cloudflare, or proprietary internal tools, we build bespoke connectors to ensure your data flows seamlessly across your entire stack."
+        question: "Can you help integrate our existing systems?",
+        answer:
+            "Absolutely. We specialize in connecting multiple platforms and applications so your data flows seamlessly."
+    },
+    {
+        question: "Do you provide training for our staff?",
+        answer:
+            "Yes, we offer hands-on, personalized training sessions to empower your team with the skills needed to use new tools effectively."
     }
 ];
-
 export function FAQ() {
     return (
         <section className="py-12 bg-muted">
-            <div className="container mx-auto px-4 lg:px-8 py-20">
+            <div className="wrapper mx-auto px-4 lg:px-8 py-20">
                 <div className="flex flex-col lg:flex-row gap-12">
-
-                    {/* Left Side: Header Logic */}
                     <div className="lg:w-1/3 space-y-4">
                         <p className="text-sm font-bold text-primary uppercase tracking-[0.2em] flex items-center gap-2">
                             <span className="h-2 w-2 rounded-full bg-primary" />
@@ -41,7 +47,7 @@ export function FAQ() {
                             Common <br /> Questions
                         </h2>
                         <p className="text-muted-foreground text-lg leading-relaxed max-w-sm">
-                            Can’t find what you’re looking for? Reach out to our team for a personalized consultation.
+                            Can’t find the answer you need? Our team is here to provide clarity and guidance.
                         </p>
                     </div>
 

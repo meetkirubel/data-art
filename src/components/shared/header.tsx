@@ -4,6 +4,8 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import Image from "next/image";
+import logo from "@/asset/logo.png"
 
 const navLinks = [
     { href: "#", label: "Home" },
@@ -17,17 +19,11 @@ export function Header() {
 
     return (
         <header className="absolute top-0 left-0 right-0 z-50">
-            <div className="container py-4  mx-auto px-4 lg:px-8">
+            <div className="wrapper py-4  mx-auto px-4 lg:px-8">
                 <div className="flex items-center justify-between h-20">
                     {/* Logo */}
                     <Link href="/" className="flex items-center gap-2">
-                        <div className="flex items-center">
-                            <div className="flex flex-col">
-                                <span className="text-white font-black text-3xl tracking-tighter">Data Arts</span>
-                                <span className="text-white font-thin text-[12px] uppercase">Consulting</span>
-
-                            </div>
-                        </div>
+                        <Image src={logo} alt="Data Art Consulting" className="h-12 w-full" objectFit="cover" />
                     </Link>
 
                     {/* Desktop Navigation */}

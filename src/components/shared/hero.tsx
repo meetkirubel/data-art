@@ -5,6 +5,7 @@ import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import hero from "@/asset/hero.jpg";
 import { motion } from "framer-motion"; // Imported Framer Motion
+import Link from "next/link";
 
 export function Hero() {
     return (
@@ -20,7 +21,7 @@ export function Hero() {
             </div>
 
             {/* Main Content */}
-            <div className="container mx-auto px-4 lg:px-8 relative z-20 mt-auto pt-48">
+            <div className="wrapper mx-auto px-4 lg:px-8 relative z-20 mt-auto pt-48">
 
                 {/* Changed to flex-col on mobile so text and buttons stack, but they sit side-by-side on large screens */}
                 <div className="flex flex-col lg:flex-row lg:justify-between lg:items-end gap-10">
@@ -32,9 +33,9 @@ export function Hero() {
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.8, ease: "easeOut" }}
-                            className="text-5xl md:text-7xl lg:text-[7rem] font-semibold font-sans tracking-tighter capitalize text-white mb-6 leading-[1.1] lg:leading-[0.9]"
+                            className="text-5xl md:text-7xl lg:text-8xl font-semibold font-sans tracking-tighter capitdalize text-white mb-6 leading-[1.1] lg:leading-[0.9]"
                         >
-                            Technology Meets <br className="hidden md:block" /> Innovation
+                            Reliable tech for your work.
                         </motion.h1>
 
                         {/* ANIMATION ADDED: Delayed by 0.2s so it follows the title */}
@@ -44,7 +45,7 @@ export function Hero() {
                             transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
                             className="text-muted font-light md:text-xl max-w-xl leading-relaxed"
                         >
-                            At Data Arts Consulting, cutting-edge advancements fuse with creative ideas to drive progress. We transform challenges into groundbreaking solutions, shaping the future.
+                            We provide support, development, and integrations to keep your systems running smoothly and your work moving forward.
                         </motion.p>
                     </div>
 
@@ -57,17 +58,19 @@ export function Hero() {
                         transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
                         className="flex flex-col sm:flex-row gap-4 shrink-0"
                     >
-                        <Button variant="secondary" className="rounded-full px-8 py-6 text-base font-medium">
-                            Get Started
-                            <ArrowRight className="ml-2 h-5 w-5" />
-                        </Button>
+                        <Link href="https://form.jotform.com/242335134954456" target="_blank">
+                            <Button variant="secondary" className="rounded-full w-full px-8 py-6 text-base font-medium">
+                                Get Started
+                                <ArrowRight className="ml-2 h-5 w-5 hidden md:block" />
+                            </Button>
+                        </Link>
                         <Button
                             variant="outline"
                             // Fixed the hover state so it turns white with black text on hover
-                            className="rounded-full px-8 py-6 text-base font-medium border-white text-white hover:bg-white hover:text-black transition-colors bg-transparent"
+                            className="rounded-full px-8 py-6 text-base font-medium  text-white bg-transparent"
                         >
                             Meet Our Process
-                            <ArrowRight className="ml-2 h-5 w-5" />
+                            <ArrowRight className="ml-2 h-5 w-5 hidden md:block" />
                         </Button>
                     </motion.div>
 
