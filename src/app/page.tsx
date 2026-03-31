@@ -1,4 +1,4 @@
-import { Companies } from "@/components/shared/companies";
+import { About } from "@/components/shared/about";
 import CTA from "@/components/shared/cta";
 import { FAQ } from "@/components/shared/faqs";
 import { Footer } from "@/components/shared/footer";
@@ -13,7 +13,7 @@ export default function Home() {
       <main className="">
         <Header />
         <Hero />
-        <Companies />
+        <About />
         <Services />
         <RecentWork />
         <FAQ />

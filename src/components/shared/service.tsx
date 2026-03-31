@@ -1,35 +1,38 @@
 import { Card, CardDescription, CardTitle } from "@/components/ui/card";
 import Image from "next/image";
-import img from "@/asset/icon1.png";
+import img1 from "@/asset/ser1.svg";
+import img2 from "@/asset/ser2.svg";
+import img3 from "@/asset/ser3.png";
+import img4 from "@/asset/ser4.svg";
 
 // The 6 Services from your data
 const SERVICES = [
     {
         title: "Technical Support",
         description: "24/7 assistance to resolve issues quickly and keep your business running.",
-        image: ""
+        image: img1,
     },
     {
         title: "Development",
         description: "Custom web, app, and database solutions designed to fit your business needs.",
-        image: ""
+        image: img2,
     },
     {
         title: "Integrations",
         description: "Connect your systems and apps seamlessly for smoother workflows.",
-        image: ""
+        image: img3
     },
     {
         title: "Training",
         description: "Hands-on sessions to help your team master new tools and technologies.",
-        image: ""
+        image: img4
     }
 ];
 
 
 export function Services() {
     return (
-        <section className="bg-background py-24">
+        <section id="services" className="bg-background pt-24">
             <div className="wrapper mx-auto lg:px-8">
 
                 {/* Header - Consistent with your other sections */}
@@ -55,14 +58,12 @@ export function Services() {
                         >
                             {/* Image/Icon Slot - Structured Height */}
                             <div className="flex items-center justify-center h-64 lg:h-96 transition-transform duration-500 group-hover:scale-110">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-badge-check h-24 w-24 text-primary/20" aria-hidden="true"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"></path><path d="m9 12 2 2 4-4"></path></svg>
-                                {/* <Image
+
+                                <Image
                                     src={service.image}
                                     alt={service.title}
-                                    width={"100"}
-                                    height={"100"}
-                                    className="w-40 h-40 object-contain" // Fixed sizing for the icon
-                                /> */}
+                                    className="w-full h-full object-contain" // Fixed sizing for the icon
+                                />
                             </div>
 
                             {/* Content Card - The "Floating" Look */}

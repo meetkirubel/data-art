@@ -10,7 +10,7 @@ import Link from "next/link";
 export function Hero() {
     return (
         // Replaced non-standard 'min-h-225' with a responsive viewport height
-        <section className="relative min-h-screen md:min-h-225 flex flex-col justify-end overflow-hidden pb-12 lg:pb-20">
+        <section id="#" className="relative min-h-screen md:min-h-225 flex flex-col justify-end overflow-hidden pb-12 lg:pb-20">
 
             {/* Background Video & Overlays */}
             <div className="absolute inset-0 overflow-hidden z-0">
@@ -64,14 +64,16 @@ export function Hero() {
                                 <ArrowRight className="ml-2 h-5 w-5 hidden md:block" />
                             </Button>
                         </Link>
-                        <Button
-                            variant="outline"
-                            // Fixed the hover state so it turns white with black text on hover
-                            className="rounded-full px-8 py-6 text-base font-medium  text-white bg-transparent"
-                        >
-                            Meet Our Process
-                            <ArrowRight className="ml-2 h-5 w-5 hidden md:block" />
-                        </Button>
+                        <Link href="#cta">
+                            <Button
+                                variant="outline"
+                                // Fixed the hover state so it turns white with black text on hover
+                                className="rounded-full px-8 py-6 text-base font-medium hover:bg-white/10 hover:text-white w-full  text-white bg-transparent"
+                            >
+                                Meet Our Process
+                                <ArrowRight className="ml-2 h-5 w-5 hidden md:block" />
+                            </Button>
+                        </Link>
                     </motion.div>
 
                 </div>
