@@ -1,10 +1,10 @@
-import Link from "next/link";
-import { Button } from "@/components/ui/button";
+import logo from "@/asset/logo.png";
+import Year from "@/components/shared/year";
 import Image from "next/image";
-import logo from "@/asset/logo.png"
+import Link from "next/link";
 export function Footer() {
     return (
-        <footer className=" bg-secondary py-16">
+        <footer className=" bg-secondary py-24">
             <div className="wrapper mx-auto  ">
                 <div className="grid md:grid-cols-4 gap-12 mb-12">
                     {/* Logo and description */}
@@ -13,12 +13,7 @@ export function Footer() {
                             <Image src={logo} alt="Data Art Consulting" className="h-12 w-50 object-cover" objectFit="cover" />
                         </Link>
                         <p className=" mb-6 max-w-sm">
-                            We provide support, development, and integrations to keep your systems running smoothly and your work moving forward.                        </p>
-                        <Link href="https://form.jotform.com/242335134954456" target="_blank">
-                            <Button >
-                                Schedule a Call
-                            </Button>
-                        </Link>
+                            We provide support, development, and integrations to keep your systems running smoothly and your work moving forward.</p>
                     </div>
 
                     {/* Links */}
@@ -26,22 +21,27 @@ export function Footer() {
                         <h4 className="font-semibold mb-4">Company</h4>
                         <ul className="space-y-3">
                             <li>
-                                <Link href="#" className=" hover:text-white transition-colors">
+                                <Link href="#about" className="transition-colors">
                                     About
                                 </Link>
                             </li>
                             <li>
-                                <Link href="#" className=" hover:text-white transition-colors">
+                                <Link href="#services" className="transition-colors">
                                     Services
                                 </Link>
                             </li>
                             <li>
-                                <Link href="#" className=" hover:text-white transition-colors">
-                                    Recent Work
+                                <Link href="#works" className="transition-colors">
+                                    Recent Works
                                 </Link>
                             </li>
                             <li>
-                                <Link href="#" className=" hover:text-white transition-colors">
+                                <Link href="#faqs" className="transition-colors">
+                                    FAQs
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="#cta" className="transition-colors">
                                     Contact
                                 </Link>
                             </li>
@@ -52,23 +52,13 @@ export function Footer() {
                         <h4 className="font-semibold mb-4">Connect</h4>
                         <ul className="space-y-3">
                             <li>
-                                <Link href="#" className=" hover:text-white transition-colors">
+                                <Link href="#" className="transition-colors">
                                     LinkedIn
                                 </Link>
                             </li>
                             <li>
-                                <Link href="#" className=" hover:text-white transition-colors">
+                                <Link href="#" className="transition-colors">
                                     Twitter
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="#" className=" hover:text-white transition-colors">
-                                    GitHub
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="#" className=" hover:text-white transition-colors">
-                                    Email
                                 </Link>
                             </li>
                         </ul>
@@ -77,13 +67,13 @@ export function Footer() {
 
                 <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
                     <p className=" text-sm">
-                        © 2026 Data Art Consulting. All rights reserved.
+                        © <Year /> Data Art Consulting. All rights reserved.
                     </p>
                     <div className="flex gap-6">
-                        <Link href="#" className=" hover:text-white text-sm transition-colors">
+                        <Link href="#" className="text-sm transition-colors">
                             Privacy Policy
                         </Link>
-                        <Link href="#" className=" hover:text-white text-sm transition-colors">
+                        <Link href="#" className="text-sm transition-colors">
                             Terms of Service
                         </Link>
                     </div>

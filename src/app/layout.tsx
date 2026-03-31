@@ -4,6 +4,7 @@ import { cn } from "@/lib/utils";
 import "./globals.css";
 
 import { DM_Sans, Work_Sans } from "next/font/google";
+import { ScrollToTop } from "@/components/shared/scroll-to-top";
 // import localFont from "next/font/local";
 
 // const palo = localFont({
@@ -44,6 +45,7 @@ export default function RootLayout({
         {/* <ThemeProvider> */}
         {children}
         {/* </ThemeProvider> */}
+        <ScrollToTop />
       </body>
     </html>
   )

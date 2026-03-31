@@ -35,7 +35,7 @@ const faqs = [
 ];
 export function FAQ() {
     return (
-        <section className="py-12 bg-muted">
+        <section id="faqs" className="py-12 bg-muted">
             <div className="wrapper mx-auto px-4 lg:px-8 py-20">
                 <div className="flex flex-col lg:flex-row gap-12">
                     <div className="lg:w-1/3 space-y-4">
@@ -44,7 +44,7 @@ export function FAQ() {
                             Support
                         </p>
                         <h2 className="text-4xl md:text-5xl lg:text-6xl font-medium tracking-tighter">
-                            Common <br /> Questions
+                            Common <br className="hidden sm:block" /> Questions
                         </h2>
                         <p className="text-muted-foreground text-lg leading-relaxed max-w-sm">
                             Can’t find the answer you need? Our team is here to provide clarity and guidance.

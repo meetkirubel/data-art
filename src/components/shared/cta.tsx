@@ -46,7 +46,7 @@ export default function CTA() {
     // FIX: Removed min-h-[80vh]. 
     // Used py-24 (mobile) and py-32 (desktop) to create the "large" section feel 
     // while remaining 100% stable on all devices.
-    <section className="relative w-full flex items-center justify-center py-20 md:py-32 px-4 md:px-8">
+    <section id="cta" className="relative w-full flex items-center justify-center py-20 md:py-32 px-4 md:px-8">
 
       {/* Background Image Container */}
       <div className="absolute inset-0 overflow-hidden">
