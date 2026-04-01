@@ -58,7 +58,7 @@ export function Header() {
                         </nav>
 
                         {/* CTA & Mobile Toggle */}
-                        <div className="flex items-center gap-4 relative z-[110]">
+                        <div className="flex items-center gap-4 relative z-110">
                             <div className="hidden md:block">
                                 <Link href="#cta">
                                     <Button variant="secondary" className="rounded-full px-6 py-5 text-sm font-semibold">
@@ -99,7 +99,7 @@ export function Header() {
             )}>
                 <div className="flex flex-col h-full pt-32 pb-12 px-6 sm:px-10">
                     {/* Staggered Nav Links */}
-                    <nav className="flex flex-col justify-around h-full">
+                    <nav className="flex flex-col gap-4 h-full">
                         {navLinks.map((link, i) => (
                             <Link
                                 key={link.label}
