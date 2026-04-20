@@ -76,7 +76,7 @@ export default function CTA() {
           <div className="flex flex-col gap-8 justify-between">
             <div className="space-y-4">
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-medium tracking-tighter leading-[1.1]">
-                Ready to Start <br /> Your Journey?
+                Let's Explore <br /> Together.
               </h2>
               <p className="text-muted-foreground text-lg leading-relaxed max-w-md">
                 Get in touch with Data Arts Consulting today. We'll help you build the technical foundation you need to scale.

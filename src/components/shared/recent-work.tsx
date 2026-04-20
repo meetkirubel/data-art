@@ -17,6 +17,7 @@ export const PROJECTS = [
         category: "Healthcare",
         image: img1,
         challenge: "Optimize Medicaid reporting and risk analytics.",
+        description: "A comprehensive data solution that streamlines complex Medicaid reporting processes. By integrating behavioral health metrics, the platform provides real-time risk visibility and ensures high data consistency for healthcare administrators.",
         result: "Faster reporting and clearer insights.",
         stats: [
             { value: "50%", label: "Faster processing" },
@@ -31,6 +32,7 @@ export const PROJECTS = [
         category: "Healthcare",
         image: img2,
         challenge: "Track provider deployment and retention trends.",
+        description: "An advanced tracking system designed to monitor provider deployment and analyze retention trends. This tool empowers policy evaluators to make data-driven decisions that improve long-term workforce stability in the healthcare sector.",
         result: "Better workforce planning and policy evaluation.",
         stats: [
             { value: "Improved", label: "Impact measurement" },
@@ -45,6 +47,7 @@ export const PROJECTS = [
         category: "Financial Services",
         image: img3,
         challenge: "Automate multi-source market data reconciliation.",
+        description: "An automated financial analytics engine that synchronizes data from multiple market sources. It eliminates manual reconciliation errors, ensuring high-fidelity pricing and increased confidence for portfolio analysts.",
         result: "Accurate pricing and faster validation.",
         stats: [
             { value: "99%", label: "Pricing accuracy" },
@@ -59,6 +62,7 @@ export const PROJECTS = [
         category: "Utilities",
         image: img4,
         challenge: "Centralize water reporting and analytics.",
+        description: "A centralized digital hub for utility management that aggregates fragmented water usage and reporting data. It provides a transparent view of utility health, enabling proactive monitoring and better infrastructure planning.",
         result: "Clear visibility and better monitoring.",
         stats: [
             { value: "Improved", label: "Reporting" },
@@ -73,6 +77,7 @@ export const PROJECTS = [
         category: "Enterprise",
         image: img5,
         challenge: "Modernize legacy enterprise systems.",
+        description: "A full-scale modernization of legacy enterprise architecture into a resilient, cloud-native environment. This transformation removes operational bottlenecks and enables rapid, scalable delivery of software services.",
         result: "Scalable, resilient, faster delivery.",
         stats: [
             { value: "Reduced", label: "Bottlenecks" },
@@ -82,7 +87,7 @@ export const PROJECTS = [
         reverse: false,
     },
 ];
-
+// export default RecentWork
 const RecentWork = () => {
     return (
         <section id='works' className="py-24 bg-background">
@@ -108,7 +113,7 @@ const RecentWork = () => {
                         <Card key={project.id} className="bg-muted border-none rounded-[2.5rem] p-4 lg:p-6 overflow-hidden">
                             <div className={`grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-stretch`}>
 
-                                {/* Image Logic: is reverse? */}
+                                {/* Image Logic */}
                                 <div className={`${project.reverse ? "lg:order-2" : "lg:order-1"}`}>
                                     <Image
                                         src={project.image}
@@ -130,7 +135,7 @@ const RecentWork = () => {
                                     </div>
 
                                     {/* Middle: Challenge & Result */}
-                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-10 py-10 border-b border-slate-200">
+                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-10 py-10">
                                         <div className="space-y-4">
                                             <h3 className="text-xl font-medium tracking-tight flex items-center gap-2">
                                                 <span className="h-2 w-2 rounded-full bg-destructive" />
@@ -145,6 +150,13 @@ const RecentWork = () => {
                                             </h3>
                                             <p className="text-muted-foreground leading-relaxed">{project.result}</p>
                                         </div>
+                                    </div>
+
+                                    {/* Description Section - ADDED HERE */}
+                                    <div className="pb-10 border-b border-slate-200">
+                                        <p className="text-lg text-foreground/80 leading-relaxed italic border-l-4 border-primary/20 pl-6">
+                                            {project.description}
+                                        </p>
                                     </div>
 
                                     {/* Bottom: The 3-Column Stats */}
