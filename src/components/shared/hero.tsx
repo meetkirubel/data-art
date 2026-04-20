@@ -10,7 +10,7 @@ import Link from "next/link";
 export function Hero() {
     return (
         // Replaced non-standard 'min-h-225' with a responsive viewport height
-        <section id="#" className="relative min-h-screen md:min-h-225 flex flex-col justify-end overflow-hidden pb-12 lg:pb-20">
+        <section id="#" className="relative min-h-screen  md:min-h-200 lg:min-h-225 flex flex-col justify-end overflow-hidden pb-12 lg:pb-20 max-h-screen">
 
             {/* Background Video & Overlays */}
             <div className="absolute inset-0 overflow-hidden z-0">
@@ -21,7 +21,7 @@ export function Hero() {
             </div>
 
             {/* Main Content */}
-            <div className="wrapper mx-auto px-4 lg:px-8 relative z-20 mt-auto pt-48">
+            <div className="wrapper mx-auto px-4 lg:px-8 relative z-20 mt-auto pt-40">
 
                 {/* Changed to flex-col on mobile so text and buttons stack, but they sit side-by-side on large screens */}
                 <div className="flex flex-col lg:flex-row lg:justify-between lg:items-end gap-10">

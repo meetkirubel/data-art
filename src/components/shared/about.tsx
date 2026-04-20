@@ -47,13 +47,13 @@ export function About() {
                 <div className="space-y-8">
 
 
-                    <h3 className="text-muted-foreground font-medium text-sm text-center  uppercase tracking-widest">
+                    {/* <h3 className="text-muted-foreground font-medium text-sm text-center  uppercase tracking-widest">
                         Trusted by Innovative Teams
-                    </h3>
+                    </h3> */}
                     {/* Marquee Container with fade masks on the edges */}
-                    <div className="relative flex overflow-hidden w-full [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
+                    <div className="relative flex overflow-hidden w-full mask-[linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
                         {/* We duplicate the array and apply the v4 animate-marquee utility. Hovering pauses the scroll. */}
-                        <div className="flex w-max animate-marquee hover:[animation-play-state:paused] items-center">
+                        <div className="flex w-max animate-marquee hover:paused items-center">
                             {[...companies, ...companies].map((company, index) => (
                                 <div
                                     key={index}
